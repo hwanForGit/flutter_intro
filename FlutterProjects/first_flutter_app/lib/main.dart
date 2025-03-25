@@ -1,7 +1,6 @@
 import 'package:first_flutter_app/main_page.dart';
 import 'package:flutter/material.dart';
 
-
 void main() {
   runApp(const MyApp());
 }
@@ -15,9 +14,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.deepPurple,
-        ),
+        //colorScheme: ColorScheme.fromSeed(
+        //  seedColor: Colors.blue,
+       // ),
+        primarySwatch: Colors.blue,
+        useMaterial3: false,  // Material2 버전을 사용하겠다.
       ),
       home: const MainPage(),
     );
