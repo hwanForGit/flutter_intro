@@ -26,6 +26,11 @@ class _MainPageState extends State<MainPage> {
               MainAxisAlignment
                   .center, // 가운데 정렬해 주는 코드
           children: [
+            Container(
+              color: Colors.red,
+              width: 100,
+              height: 100,
+            ),
             Text(
               '숫자',
               // flutter 에서는 작은 따옴표에 '${변수명}' 으로 표시
@@ -77,10 +82,16 @@ class _MainPageState extends State<MainPage> {
               height: 100,
               fit: BoxFit.cover // 가로 세로 채우는 느낌, fit : 이미지의 형태를 보여줌
             ),
-            Image.asset('assets/pic.jpg',
-              width: 100,
-              height: 100,
-              fit: BoxFit.cover
+            Container(
+              color: Colors.red,
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Image.asset('assets/pic.jpg',
+                  width: 100,
+                  height: 100,
+                  fit: BoxFit.cover
+                ),
+              ),
             ),
           ],
         ), // option + enter 키로 wrapping 가능
